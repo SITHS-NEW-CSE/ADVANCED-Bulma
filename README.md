@@ -17,6 +17,8 @@
 -------------------------------------------------------------------------------------
 ## CSS FRAMEWORK - BULMA
 
+## for help visit bulma's website for documentation at https://bulma.io/documentation
+
 ## WHAT IS BULMA?
 ## Bulma is a newer, free, open source CSS framework with elegant defaults and a strict CSS-only approach (no JavaScript)
 ## Bulma has extremely readable CSS classes with a simple system for creating grids (called tiles)
