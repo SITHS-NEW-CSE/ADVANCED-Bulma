@@ -18,11 +18,15 @@
 ## CSS FRAMEWORK - BULMA
 
 ## WHAT IS BULMA?
-## Bulma is a newer, free, open source CSS framework with elegant defaults and a strict CSS-only approach (no JavaScript)
+## Bulma is a newer, free, open source CSS framework with elegant defaults and a strict CSS-only approach
 ## Bulma has extremely readable CSS classes with a simple system for creating grids (called tiles)
 ## Bulma was created to solve the practical, everyday problems that individual developers come across, and is fairly easy to learn with a decent background in css
 
 ## HOW TO GET BULMA
-## To install, enter "npm install bulma" into the terminal
+## Insert this line into yor HTML above your link for the css file
+## <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+## TO VIEW YOUR HTML FILE:
+## In the file explorer, find your project and right click your index.html file and open with your preferred browser
 
 
