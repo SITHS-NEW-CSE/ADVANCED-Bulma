@@ -10,6 +10,48 @@
   <body>
     <!-- Make a test div with styling for class test to check files working properly -->
     <div class="test">Test</div>
+
+    <!-- Let's start with a simple button using the "button" class -->
+    <a class="button">Button</a>  <!-- By adding new classes in the HTML you can directly change the element -->
+    <a class="button is-dark">Button</a>
+    <a class="button is-success">Button</a>
+    <a class="button is-warning">Button</a>
+    <a class="button is-danger">Button</a>
+    <!-- Here you can see how each element color is different based on the Bulma class added -->
+    <!-- You can also modify color and color shade -->
+    <a class="button is-black ter">Button</a>
+    <a class="button is-grey light">Button</a>
+    <!-- You can also alter the element sizes -->
+    <a class="button is-small">Button</a>
+    <a class="button is-large">Button</a>
+    <!-- You can also change the style or state -->
+    <a class="button" disabled>Button</a>
+    <a class="button is-loading">Button</a>
+    <!-- Lastly, you can combine modifiers -->
+    <a class="button is-large is-danger is-loading">Button</a>
+
+    <!-- Responsiveness
+    5 BREAKPOINTS:
+        mobile: up to 768px
+        tablet: from 769px
+        desktop: 1024px
+        widescreen: 1216px
+        fullhd: from 1408px
+    9 MIXINS:
+        =mobile: until 768px
+        =tablet: from 769px
+        =tablet-only: from 769px until 1023px
+        =touch: until 1023px
+        =desktop: from 1024px
+        =desktop-only: from 1024px until 1215px
+        =widescreen: from 1216px
+        =widescreen-only: from 1216px until 1407px
+        =fullhd: from 1408px
+    Vertical By Default
+        - Bulma is mobile-first, and optimizes vertical reading
+        - On mobile, columns are stacked vertically, the nav menu is hidden, 
+          and the level component will show children stacked vertically
+    -->
     <script src="js/index.js"></script>
   </body>
 </html>
