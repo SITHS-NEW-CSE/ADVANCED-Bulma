@@ -8,12 +8,82 @@
     <link rel="stylesheet" href="css/mystyles.css" />
   </head>
   <body>
-    <!-- Make a test div with styling for class test to check files working properly -->
-    <div class="test">Test</div>
-
-    <!-- Let's start with a simple button using the "button" class -->
-    <a class="button is-black">Button</a>  <!-- By adding new classes in the HTML you can directly change the element -->
-
+    <!-- Let's start with some columns -->
+    <div class="columns">       <!-- With Bulma, add a columns container -->
+        <div class="column">    <!-- Add as many column elements as you want -->
+          First column          <!-- Each column will have equal width -->
+        </div>                  <!-- Use Bulma classes to change the size of a column --> 
+        <div class="column is-one-quarter">    
+          Second column
+        </div>
+        <div class="column is-half">
+          Third column
+        </div>
+        <div class="column">
+          Fourth column
+        </div>
+      </div>
+      <!-- You can also offset columns -->
+      <!-- We use is-mobile here to get vertical columns -->
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">1</div>
+      </div>
+      <div class="columns is-mobile">
+        <div class="column is-4 is-offset-8">3</div>
+      </div>
+      <!-- If you want a column to only take the space it needs, use is-narrow -->
+      <div class="columns">
+        <div class="column is-narrow">
+          <div class="box" style="width: 200px;">
+            <p class="title is-5">Narrow column</p>
+            <p class="subtitle">This column is only 200px wide.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <p class="title is-5">Flexible column</p>
+            <p class="subtitle">This column will take up the remaining space available.</p>
+          </div>
+        </div>
+      </div>
+      <!-- If you want columns to work on mobile too, use the is-mobile modifier -->
+      <div class="columns is-mobile">   <!-- If not, then use is-desktop -->
+        <div class="column">1</div>
+        <div class="column">2</div>
+      </div>
+      <!-- Nesting Columns -->
+      <!-- You can nest columns using this structure:
+         columns: top level
+            column
+               columns: nested columns
+                  column   and so on-->
+      <div class="columns">
+      <div class="column">
+          <p class="bd-notification is-info">First column</p>
+          <div class="columns is-mobile">
+          <div class="column">
+              <p class="bd-notification is-info">First nested column</p>
+          </div>
+          <div class="column">
+              <p class="bd-notification is-info">Second nested column</p>
+          </div>
+          </div>
+      </div>
+      <div class="column">
+          <p class="bd-notification is-danger">Second column</p>
+          <div class="columns is-mobile">
+          <div class="column is-half">
+              <p class="bd-notification is-danger">50%</p>
+          </div>
+          <div class="column">
+              <p class="bd-notification is-danger">Auto</p>
+          </div>
+          <div class="column">
+              <p class="bd-notification is-danger">Auto</p>
+          </div>
+          </div>
+      </div>
+      </div>
 
     <script src="js/index.js"></script>
   </body>
