@@ -1,0 +1,26 @@
+{
+  "name": "ADVANCED-Frameworks",
+  "version": "1.0.0",
+  "description": "-------------------------------------------------------------------------------------\r ## CSS FRAMEWORK - BULMA",
+  "main": "index.js",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SITHS-NEW-CSE/ADVANCED-Frameworks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SITHS-NEW-CSE/ADVANCED-Frameworks/issues"
+  },
+  "homepage": "https://github.com/SITHS-NEW-CSE/ADVANCED-Frameworks#readme",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "node-sass": "^6.0.1"
+  }
+}
